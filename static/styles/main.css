@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'head';
+  src: url('../assets/fonts/Paladins.woff2') format('woff2'),
+    url('../assets/fonts/Paladins.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.play {
+  opacity: 0.8;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  align-items: center;
+}
+
+#world {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(#2a063d, #795e87);
+}
+
+.title {
+  font-family: 'head', Arial, Helvetica, sans-serif;
+  font-size: 4.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2rem;
+}
+
+.score_title {
+  font-family: 'head', Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.score_subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0 0 2rem 0;
+}
